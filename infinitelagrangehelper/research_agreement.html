@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Research Path - Infinite Lagrange Helper</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/research_path.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Research Path</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="fleet_builder.html">Fleet Builder</a></li>
+                <li><a href="research_calculator.html">Research Calculator</a></li>
+                <li><a href="supercapital_ships.html">Supercapital Ships</a></li>
+                <li><a href="guides.html">Guides</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <article>
+                <h2>Select a Ship Variant</h2>
+                <select id="ship-class">
+                    <option value="">--Select Ship Class--</option>
+                    <option value="Fighter">Fighter</option>
+                    <option value="Corvette">Corvette</option>
+                    <option value="Frigate">Frigate</option>
+                    <option value="Destroyer">Destroyer</option>
+                    <option value="Cruiser">Cruiser</option>
+                    <option value="Battlecruiser">Battlecruiser</option>
+                    <option value="Auxiliary">Auxiliary Ship</option>
+                    <option value="Carrier">Carrier</option>
+                    <option value="Battleship">Battleship</option>
+                </select>
+    
+                <div id="ship-variant-container" style="display:none;">
+                    <select id="ship-variant"></select>
+                </div>
+    
+                <div id="research-table-container" style="display:none;">
+                    <h3 id="variant-name"></h3>
+                    <table id="research-table">
+                        <thead>
+                            <tr>
+                                <th>Picture</th>
+                                <th>Research Path</th>
+                                <th>Probability</th>
+                                <th>Other Outcomes</th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </article>
+    
+            <article>
+                <h2>Research Agreement Explanation</h2>
+                <p>
+                    The Research Agreement allows the player to target a selected Blueprint over three selection option to research.
+                    First the player chooses from what Company the ship he wants to research is. After he chooses the company that produced 
+                    the ship the player then can filter for specific capabilitys of the ship such as <i>"Heavy Firepower"</i>, <i>"Sustained Comabt"</i>
+                    or <i>"Fighter & Corvette"</i>. The Research Agreement requires 25 Research Points which can be gained from Chests or Events. One 
+                    Research Agreement can take several weeks to finish. In the end the player has the chance to gain the Blueprint of the ship he wants
+                    or gain a different option that meets the same criteria. 
+                </p>
+            </article>
+        </section>
+    </main>    
+    <footer>
+        <p>&copy; 2024 Infinite Lagrange Helper</p>
+    </footer>
+</body>
+</html>

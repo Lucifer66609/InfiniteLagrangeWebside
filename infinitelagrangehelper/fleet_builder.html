@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fleet Builder</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Fleet Builder</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="fleet_builder.html">Fleet Builder</a></li>
+                <li><a href="research_agreement.html">Research Calculator</a></li>
+                <li><a href="supercapital_ships.html">Supercapital Ships</a></li>
+                <li><a href="guides.html">Guides</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <label for="ship-class">Select Ship Class:</label>
+            <select id="ship-class">
+                <option value="">--Select Class--</option>
+                <option value="Fighter">Fighter</option>
+                <option value="Corvette">Corvette</option>
+                <option value="Frigate">Frigate</option>
+                <option value="Destroyer">Destroyer</option>
+                <option value="Cruiser">Cruiser</option>
+                <option value="Battlecruiser">Battlecruiser</option>
+                <option value="Auxiliarship">Auxiliar Ship</option>
+                <option value="Carrier">Carrier</option>
+                <option value="Battleship">Battleship</option>
+            </select>
+        </section>
+        <section id="ship-variant-container" style="display:none;">
+            <label for="ship-variant">Select Ship Variant:</label>
+            <select id="ship-variant"></select>
+            <label for="ship-quantity">Quantity:</label>
+            <input type="number" id="ship-quantity" min="1">
+            <button id="add-ship">Add Ship to Fleet</button>
+        </section>
+        <section>
+            <label for="maxCommandPoints">Max Command Points:</label>
+            <input type="number" id="maxCommandPoints" value="50" max="420">
+            <div id="totalCommandPoints">Total Command Points: 0</div>
+        </section>
+        <section>
+            <h2>Fleet Composition</h2>
+            <div id="fleet-container"></div>
+        </section>
+    </main>
+    <script src="js/fleetbuilder.js"></script>
+    <footer>
+        <p>&copy; 2024 Infinite Lagrange Helper</p>
+    </footer>
+</body>
+</html>
